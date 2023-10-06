@@ -116,6 +116,7 @@ onMounted(() => {
 onUnmounted(() => {
     document.removeEventListener('click', handlerClickDocument, false)
     document.removeEventListener('keyup', handlerKeyElem, false)
+    document.addEventListener('keyup', addSelectElemKey, false)
 })
 
 </script>
