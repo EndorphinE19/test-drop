@@ -4,7 +4,7 @@
  * @param ms Время срабатывания
  * @returns Анонимная функция
  */
-export const debounce = (fn: Function, ms: number): Function => {
+export const debounce = (fn: Function, ms: number): () => {} => {
 
     let interval: ReturnType<typeof setInterval> | null = null;
 
