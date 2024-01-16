@@ -11,7 +11,7 @@ export const debounce = (fn: Function, ms: number): () => {} => {
     return async () => {
 
         if(interval) clearTimeout(interval)
-        interval = setTimeout(async () => await fn(), ms)
+        interval = setTimeout(() => fn(), ms)
 
     }
 }
